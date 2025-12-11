@@ -1,0 +1,245 @@
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Stone100: hsl(30, 54%, 90%);
+    --Stone150: hsl(30, 18%, 87%);
+    --Stone600: hsl(30, 10%, 34%);
+    --Stone900: hsl(24, 5%, 18%);
+    --Brown800: hsl(14, 45%, 36%);
+    --Rose800: hsl(332, 51%, 32%);
+    --Rose50: hsl(330, 100%, 98%);
+}
+
+@font-face {
+  font-family: 'myCustomFont1';
+  src:url('fonts/outfit/Outfit-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: 'myCustomFont2';
+  src:url('fonts/young-serif/YoungSerif-Regular.ttf');
+}
+
+body{
+    background-color: var(--Stone100);
+}
+
+main{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin-top: 8em; 
+    margin-bottom: 8em;
+}
+
+.image{
+    background-color: var(--White);
+    width: 40em;
+    padding:1.5em;
+    padding-bottom: 0;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+}
+
+.mainBox{
+    background-color: var(--White);
+    padding:1.5em;
+    padding-top: 0;
+    width:40em;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+}
+
+.omeletteImage{
+    width: 40em;
+    height: auto;
+    border-radius: 1em;
+}
+
+.heading{
+    font-family: 'myCustomFont2';
+    font-size: 2.32em;
+    font-weight: 400;
+    margin: 0;
+    margin-top: 0.65em;
+    margin-bottom: 0.5em;
+    
+}
+
+.generalInfo{
+    margin: 0;
+    padding: 0;
+    max-width: 39em;
+    font-family: 'myCustomFont1';
+    font-size: 0.95em;
+    font-weight: 400;
+    color:var(--Stone600);
+}
+
+.preparationTimeBox{
+    background-color: var(--Rose50);
+    margin: 0;
+    margin-top: 2em;
+    padding: 1em;
+}
+
+.preparationTime{
+    margin: 0;
+    padding: 0;
+    padding-left: 0.8em;
+    font-family: 'myCustomFont1';
+    font-weight: 600;
+    color: var(--Rose800);
+}
+
+.preparation{
+padding:0;
+padding-left: 2.3em;
+}
+
+.preparation li::marker{
+    color: var(--Rose800);
+}
+.preparation li{
+    padding-left: 1em;
+    margin-bottom: 1em;
+    font-family: 'myCustomFont1';
+    font-size: 1em;;
+    color:var(--Stone600);
+    font-weight: 400;
+}
+
+.boldText{
+    color: var(--Stone900);
+    font-weight: 600;
+}
+
+.ingredients{
+    color: var(--Brown800);
+    font-family: 'myCustomFont2';
+    font-weight: 400;
+    font-size: 1.8em;
+}
+
+.ingredientsBox ul{
+    padding: 0;
+    padding-left: 1.3em;
+    list-style-type: square;
+}
+
+.ingredientsBox ul li::marker{
+    color: var(--Brown800);
+}
+
+.ingredientsBox ul li{
+    padding-left: 1em;
+    padding-bottom: 0.5em;
+    color:var(--Stone600);
+}
+
+.flatLine{
+    border:none;
+    height: 0.125em;
+    background-color: var(--Stone150);
+    padding: 0;
+    margin: 0;
+    margin-top: 1em;
+}
+
+.instuctionsHeading{
+    color: var(--Brown800);
+    font-family: 'myCustomFont2';
+    font-weight: 400;
+    font-size: 1.8em;
+}
+
+.instructionsBox ol{
+    padding: 0;
+    padding-left: 1.3em;
+}
+
+.instructionsBox ol li::marker{
+    color: var(--Brown800);
+}
+
+.instructionsBox ol li{
+    padding-left: 1em;
+    padding-bottom: 0em;
+    color:var(--Stone600);
+    font-family: 'myCustomFont1';
+    font-size: 1em;
+}
+
+.instructions{
+    color: var(--Stone600);
+    font-weight: 600;
+    font-family: 'myCustomFont1';
+}
+
+.nutritionHeading{
+    color: var(--Brown800);
+    font-family: 'myCustomFont2';
+    font-weight: 400;
+    font-size: 1.8em;
+}
+
+.nutritionInfo{
+    color: var(--Stone600);
+    font-weight: 400;
+    font-family: 'myCustomFont1';
+    font-size: 1em;
+}
+
+.nutritionLine{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 2em;
+}
+
+.nutrition{
+    color: var(--Stone600);
+    font-weight: 400;
+    font-family: 'myCustomFont1';
+    font-size: 1em;
+    margin-bottom: 0;
+    padding: 0;
+    padding-left: 2em;
+    padding-bottom: 1em;
+}
+
+.nutritionValue{
+    color: var(--Brown800);
+    font-weight: 700;
+    font-family: 'myCustomFont1';
+}
+
+@media screen and (max-width: 40.625em)  {
+
+
+    main{
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .image{
+        width: 22em;
+        border-radius: 0;
+        padding: 0;
+    }
+
+    .omeletteImage{
+        width: 22em;
+        height: auto;
+        border-radius: 0;
+    }
+
+
+    .mainBox{
+        background-color: var(--White);
+        width: 19em;
+        border-radius: 0;
+
+    }
+
+}
